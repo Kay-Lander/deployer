@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Succes pagae</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1>You're on the Success Page!</h1>
+  {% for user in users%}
+  {{user.session.id}}
+  {% endfor %}
+  <a href="{% url 'logout' %}">Logout</a>
+</body>
+</html>
